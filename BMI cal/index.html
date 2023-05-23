@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+</head>
+<style>
+    body {
+        background-color: violet;
+        color: black;
+       
+
+    }
+
+    .container {
+        background-color: black;
+        color: white;
+        border-radius:5px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        font-size: large;
+        padding: 15px;
+        transform: translate(-50%, -50%);
+        box-shadow: rgb(205, 135, 205);
+
+
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        border: 1px solid violet;
+        margin-top:10%;
+        display:block;
+    }
+
+    span {
+        color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+    }
+    .nie {
+      text-align: center;
+      text-decoration: underline;
+    }
+    input {
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2 class="nie">Zuzu's BMI Calculator</h2>
+        <p>Height in CM:
+            <input type="text" id="height">
+            <span id="height_error"></span>
+        </p>
+        <p>Weight in KG:
+            <input type="text" id="weight">
+            <span id="weight_error"></span>
+        </p>
+        <button id="btn">Calculate</button>
+        <div class="ans">
+            <p id="output"></p>
+        </div>
+
+    </div>
+</body>
+<script src="/BMI cal/code.js"></script>
+
+</html>
